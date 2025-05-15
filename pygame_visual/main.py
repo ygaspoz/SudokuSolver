@@ -2,7 +2,7 @@ from SudokuBoard import SudokuBoard
 from smert_algo import SmartAlgo
 from dummy_algo import dummy_algo
 from backtracking import backtracking
-import time
+from visual import display_interactive_board, initialize_gui
 
 table_easy = [
     [" ", " ", 1, " ", " ", 4, " ", " ", 2],
@@ -29,6 +29,4 @@ table_hard = [
 ]
 
 board = SudokuBoard(table_hard, 9)
-start_time = time.time()
-backtracking(board)
-print("--- %s seconds ---" % (time.time() - start_time))
+display_interactive_board(board, backtracking)
