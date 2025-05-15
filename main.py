@@ -1,7 +1,5 @@
 from SudokuBoard import SudokuBoard
-from smert_algo import SmartAlgo
-from dummy_algo import dummy_algo
-from backtracking import backtracking
+from algorithms.backtracking import backtracking
 import time
 
 table_easy = [

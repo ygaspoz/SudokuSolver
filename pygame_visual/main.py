@@ -1,6 +1,4 @@
 from SudokuBoard import SudokuBoard
-from smert_algo import SmartAlgo
-from dummy_algo import dummy_algo
 from backtracking import backtracking
 from visual import display_interactive_board, initialize_gui
 
